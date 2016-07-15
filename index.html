@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DraGold Ötvösmester</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Egyedi ékszerkészítés">
+  <meta name="keywords" content="Ötvös, egyedi, arany, ezüst, ékszer készítés, egyedi igények">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Dosis:500|Yanone+Kaffeesatz|Poiret+One|Architects+Daughter|Cinzel|Niccone|Lora:400,400italic|Courgette|Marck+Script|Maven+Pro:700|MeriendaOne' rel='stylesheet' type='text/css'>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script>
+  $(document).ready(function(){
+  	$('a[href^="#"]').on('click',function (e) {
+  	    e.preventDefault();
+
+  	    var target = this.hash;
+  	    var $target = $(target);
+
+  	    $('html, body').stop().animate({
+  	        'scrollTop': $target.offset().top - 50
+  	    }, 1200, 'swing', function () {
+  	        window.location.hash = target;
+  	    });
+  	});
+  });
+  </script>
+</head>
+<body class="page-body">
+
+  <div id="navi"></div>
+  <!-- navigation bar -->
+  <nav class="container-fluid">
+      <!--<div class="ajanlat"><a href="#">Ajánlat kérés</a></div>-->
+      <div class="col-md-3 logo"><h1>DraGold ékszer</h1></div>
+      <div class="col-md-9 menu">
+        <ul>
+          <li><a href="#">Szolgáltatásaim</a></li>
+          <li><a href="#">Áraim</a></li>
+          <li><a href="#">Kapcsolat</a></li>
+          <li><a href="#" id="ajanlat-button">Ajánlat kérés</a></li>
+          <li><a href="#" id="facebook-button">f</a></li>
+        </ul>
+      </div>
+  </nav>
+  <div class="tel-number">+36 (30) 815-6309</div>
+  <!-- header -->
+  <header>
+    <div class="header-top">
+      <div class="head-top"><i>Egyedi ékszerek készítése</i></div>
+      <div class="head-title"><h1>Dragovits András</h1></div>
+      <div class="head-bottom"><i>Ékszerész</i></div>
+      <div class="header-menu">
+          <span><a href="#egyedi_ekszer_keszites">Egyedi ékszer készítés</a></span>
+          <span><a href="#ekszer_javitas_helyben">Ékszer javítás helyben</a></span>
+          <span><a href="#tortarany">Törtarany felvásárlás</a></span>
+          <span><a href="#karikagyuru_keszites">Karikagyűrű készítés</a></span>
+          <span><a href="#polirozas">Tisztítás, polírozás</a></span>
+          <span><a href="#ekszer_restauralas">Ékszer restaurálás</a></span>
+          <span><a href="#veses_gravirozas">Vésés, gravírozás</a></span>
+          <span><a href="#kopotlas">Kőpótlás</a></span>
+      </div>
+    </div>
+  </header>
+  <!-- container-narrow -->
+
+    <article class="welcome">
+      <h1>Üdvözlöm!</h1>
+      <p>1989 óta, immáron több mint <strong>26 éve</strong> foglalkozom egyedi arany, ezüst ékszerek készítésével, javításával., restaurálásával. elkészítem egyedi karikagyűrűjét akár hozott kép alapján is. Üzletemben található a műhelyem is, így kisebb munkák (kőpótlás, polírozás) akár helyben megvárható, vagy 1-2 munkanapon belül elkészül.</p>
+      <p>Várom szeretettel üzletemben, jól megközelíthető helyen vagyok, illetve telefonon is szívesen válaszolok a felmerülő kérdésére. Ajánlatkérés gomb alatt pedig bármelyik szolgáltatásom felől tud érdeklődni, árajánlatot kérni.</p>
+      <p>Fontos számomra az ügyfél elégedettsége, így egy napon belül számíthat válaszomra. Keressen bátran.</p>
+      <cite>Dragovits András</cite>
+    </article>
+
+<!-- TODO : meg akarom oldani hogy szepen kulonallo blokkok legyenek a lentiek -->
+
+    <section id="egyedi_ekszer_keszites">
+      <article id="feature">
+        <header><h2>Egyedi ékszer készítés</h2></header>
+        <p>Üzletembe vállalom, hogy elkészítem az ékszerét akár egyedi elképzelés, hozott kép, vagy hozott minta alapján. Az Ön elképzelése alapján fehér, sárga, vörös aranyból, illetve igény esetén ezüstből.</p>
+      </article>
+    </section>
+    <section id="ekszer_javitas_helyben">
+      <article id="feature">
+        <header><h2>Ékszer javítás helyben</h2></header>
+        <p>Az üzletembe lévő műhelyembe akár azonnali ékszer javítást is tudok vállalni, amennyiben az lehetséges, de ha nem, egy-két nap alatt a sérült ékszer kijavításra kerül, és az üzletembe átvehető.</p>
+      </article>
+    </section>
+    <section id="tortarany">
+      <article id="feature">
+        <header><h2>Törtarany felvásárlás</h2></header>
+        <p>Tört arany felvásárlás a legmagasabb napi árfolyamon, azonnali készpénz fizetéssel.</p>
+      </article>
+    </section>
+    <section id="karikagyuru_keszites">
+      <article id="feature">
+        <header><h2>Karikagyűrű készítés</h2></header>
+        <p>Üzletembe karika gyürü készítéssel is foglalkozok. Akár egyszínű fehér/sárga/vörös (rose) aranyból, a kívánt szélesség és profil szerint, de lehetőség van ezek kombinációjából is elkészíteni az önök által megálmodott karikagyürüt,...kép,..rajz,és hozott minta alapján is lehetséges ez.A karika gyürübe egyedi vésést,..dátum ,.név,..rajz,de akár újéenyomat vésését is vállalom.</p>
+      </article>
+    </section>
+    <section id="polirozas">
+      <article id="feature">
+        <header><h2>Tisztítás, polírozás</h2></header>
+        <p>Elkoszolódott, karcos arany, ezüst, acél ékszerét, óráját, polírozással, ultra hangos tisztítással, aranyozással, ródiumozással akár aznap, vagy egy napos határidővel tudom elvállalni.</p>
+      </article>
+    </section>
+    <section id="ekszer_restauralas">
+      <article id="feature">
+        <header><h2>Ékszer restaurálás</h2></header>
+        <p>Régi kopott ékszerek javítása, kőpótlás, gyűrű sín részének megerősítése, cseréje. Vésés “frissítése”, törött, szakadt részek rendbe hozatala, megerősítése, polírozás, tisztítás rövid határidövelß.</p>
+      </article>
+    </section>
+    <section id="veses_gravirozas">
+      <article id="feature">
+        <header><h2>Vésés, gravírozás</h2></header>
+        <p>Akár új, akár régi ékszerek, egyedi elképzelés szerinti kézi illetve gépi vésése. Régi, kikopott vésések rendbe hozatala, frissítése 2-5 munkanap határidővel. Igény szerint az alapfém színétől eltérő színben is.</p>
+      </article>
+    </section>
+    <section id="kopotlas">
+      <article id="feature">
+        <header><h2>Kőpótlás</h2></header>
+        <p>Nemesfém ékszerekben kő pótlás, fél drága, illetve drágakövekkel, brilliánsal, hagyományos kézi foglalással, garanciával.</p>
+      </article>
+    </section>
+
+    <a href="#navi" id="go-top"></a>
+
+<!-- footer -->
+<footer>
+  <div>
+    <address class="footer-info">
+      <strong>1177 Budapest, Wesselény u. 25</strong>
+      <p><strong>Nyitva tartás</strong>
+        <br> minden hétköznap 10-18 óra között<br><abbr title="Mobile">Tel</abbr> +36 (30) 815-6309<br>Email: <a href="mailto:dragovitsandras@gmail.com">dragovitsandras@gmail.com</a></p>
+    </address>
+    <div class="footer-menu">
+      <ul>
+        <li>Térkép</li>
+        <li>Szolgáltatásaim</li>
+        <li>Áraim</li>
+        <li>Kapcsolat</li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">2016</div>
+</footer>
+
+</body>
+</html>
