@@ -35,7 +35,6 @@ section p {
   z-index: +1;
 }
 
-.menu { text-align: right;}
 .menu ul { margin: 0; padding: 0; }
 .menu li a {
   display: inline-block;
