@@ -1,12 +1,12 @@
-.center {text-align: center;}
-.right {float:right;}
 html, body {
   font-family: 'Lora', serif;
   margin: 0;
-  padding-top: 10px;
   color: #000000;
   background-color: #fff
 }
+
+.center {text-align: center;}
+.right {float:right;}
 
 .udvozlo {
   padding: 10px;
@@ -28,27 +28,15 @@ section p {
   position:fixed;
   top:0;
   background-color: #000000;
+  opacity: 0.8;
   margin: 0;
   left:0;
   width:100%;
   z-index: +1;
 }
 
-.logo {
-  color:#ffffff;
-  float:left;
-  overflow: auto;
-}
-
-.logo h1 {
-  font-weight: bold;
-  padding: 10px 0px 5px 10px;
-  margin:auto;
-}
-
 .menu { text-align: right;}
 .menu ul { margin: 0; padding: 0; }
-.menu li { display: inline-block; }
 .menu li a {
   display: inline-block;
   text-decoration: none;
@@ -107,18 +95,16 @@ section p {
 
 .header-top {
   background-image: url("../img/dragold_wp.jpg");
-  margin: 0;
   color:#ffffff;
-  border-radius: 0px 0px 5px 5px;
   text-align: center;
-  padding: 90px 0px 10px 0px;
+  padding: 90px 0px 90px 0px;
 }
 
 .header-top i {font-size: 30px;}
 
 .head-title {
   width: 650px;
-  margin: 20px auto 20px;
+  margin: 20px auto;
   padding: 10px 0px 10px 0px;
   border-top: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
