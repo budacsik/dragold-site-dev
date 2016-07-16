@@ -1,5 +1,5 @@
 .center {text-align: center;}
-
+.right {float:right;}
 html, body {
   font-family: 'Lora', serif;
   margin: 0;
@@ -7,14 +7,24 @@ html, body {
   color: #000000;
   background-color: #fff
 }
-p {
+
+.udvozlo {
+  padding: 10px;
+  font-size: 19px;
+  text-align: justify;
+  letter-spacing: -.003em;
+  line-height: 1.58;
+}
+
+section p {
   padding: 10px;
   font-size: 16px;
   text-align: justify;
   letter-spacing: -.003em;
   line-height: 1.58;
 }
-nav {
+
+ nav {
   position:fixed;
   top:0;
   background-color: #000000;
@@ -120,17 +130,7 @@ nav {
   font-family: 'Poiret One', cursive;
 }
 
-.welcome {
-  width: 60%;
-  margin: 0 auto;
-  line-height: 22px;
-  font-size: 19px;
-  text-align: justify;
-  padding: 40px 0px 40px 0px;
-  letter-spacing: -.003em;
-  line-height: 1.40;
-}
-.welcome cite {
+.container cite {
   display: block;
   margin: 25px 0px 10px;
   font-family: 'Marck Script';
