@@ -9,9 +9,9 @@ html, body {
 .right {float:right;}
 
 .udvozlo {
-  padding: 10px;
-  font-size: 19px;
-  text-align: justify;
+  padding: 10px 10px 0px 10px ;
+  font-size: 18px;
+
   letter-spacing: -.003em;
   line-height: 1.58;
 }
@@ -19,7 +19,6 @@ html, body {
 section p {
   padding: 10px;
   font-size: 16px;
-  text-align: justify;
   letter-spacing: -.003em;
   line-height: 1.58;
 }
@@ -42,38 +41,11 @@ section p {
   color: #FFFFFF;
   font-size: 16px;
   padding: 14px 16px;
-  font-family: 'Cinzel', serif;
   transition: 0.2s;
 }
 
-.menu a:hover {
-  background-color: rgba(153,194,255,0.2);
-}
+.menu a:hover  { background-color: rgba(153,194,255,0.2); }
 .menu a:active { text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.75);}
-
-#fb {
-  border-right: 0px;
-  margin-left: 50px;
-  margin-right: 5px;
-  padding: 5px;
-  height: 20px;
-  border-radius: 15px;
-  background-color: #3b5998;
-  color: #f7f7f7;
-  font-size: 16px; font-family: 'Architects Daughter', cursive;
-  opacity: 0.8;
-}
-
-#facebook-button {
-  border-radius: 6px;
-  padding: 5px;
-  height: 20px;
-  margin:0px 10px 0px 10px;
-  text-align: center;
-  font-size: 16px;
-  width: 26px;
-  background-color: #3b5998;
-}
 
 #ajanlat-button {
   border-radius: 6px;
@@ -92,10 +64,10 @@ section p {
   color:#ffffff;
 }
 
+header {padding-bottom: 20px;}
 .header-top {
   background-image: url("../img/dragold_wp.jpg");
   color:#ffffff;
-  text-align: center;
   padding: 90px 0px 90px 0px;
 }
 
