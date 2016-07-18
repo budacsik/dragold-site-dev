@@ -1,31 +1,130 @@
 html, body {
+  font-family: sans-serif;
   margin: 0;
 }
 
-.body-text{color: #00284d; opacity: 0.8}
+h1 {font-size: 36px;}
 
+@media screen and (min-width: 768px) {
+  h1 {
+      font-size: 36px;
+  }
+}
+
+.body-text p { font-size: 12px; }
+@media screen and (min-width: 768px) {
+  .body-text p {
+    font-size: 14px;
+  }
+}
+.jumbotron p { font-size: 18px; }
+@media screen and (min-width: 768px) {
+  .jumbotron p {
+    font-size: 23px;
+  }
+}
+
+.body-text h2 { font-size: 23px; }
+@media screen and (min-width: 768px) {
+  .body-text h2 {
+    font-size: 30px;
+  }
+}
+
+.welcome-div {
+  background-color: #001a33;
+  color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  font-weight: 200;
+}
+
+@media screen and (min-width: 768px) {
+  .welcome-div {
+    background-image: url("../img/dragold_wp.jpg");
+    color: #ffffff;
+    padding-top: 80px;
+    padding-bottom: 48px;
+    margin-bottom: 20px;
+  }
+}
+
+#topnav{
+  top: 0;
+  background: rgba(0,0,0,0.9);
+  border: 0;
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+.body-text {color: #00284d; opacity: 0.8}
+
+section p {
+  padding: 10px;
+  font-size: 12px;
+  letter-spacing: -.003em;
+  line-height: 1.58;
+}
+
+@media screen and (min-width: 768px) {
+  section p {
+    padding: 10px;
+    font-size: 16px;
+    letter-spacing: -.003em;
+    line-height: 1.58;
+  }
+}
 .center {text-align: center;}
 .right {float:right;}
-.vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
+.top20 {margin-top: 20px;}
+
+
+.name-col h1 {
+  font-family: 'Poiret One', cursive;
+  font-size: 40px;
+  opacity: 0.6;
 }
+
+@media screen and (min-width: 768px) {
+  .name-col h1 {
+    font-family: 'Poiret One', cursive;
+    font-size: 63px;
+  }
+}
+
+.name-col h2 {
+  font-size: 25px;
+  opacity: 0.6;
+}
+@media screen and (min-width: 768px) {
+  .name-col h2 {
+    font-size: 25px;
+    opacity: 0.6;
+  }
+}
+
+.container-header {
+  background-image: url("../img/dragold_wp.jpg");
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  color:#ffffff;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  margin:0;
+}
+
 .udvozlo {
   padding: 10px 10px 0px 10px ;
-  font-size: 17px;
+  font-size: 15px;
   opacity: 0.7;
   font-family: 'Hind', sans-serif;
   letter-spacing: +.035em;
   line-height: 1.40;
   text-shadow: 1px 1px 2px #000000;
 }
-
-section p {
-  padding: 10px;
-  font-size: 16px;
-  letter-spacing: -.003em;
-  line-height: 1.58;
+@media screen and (max-width: 768px) {
+  .udvozlo{display:none;}
 }
 
 .tel-number {
@@ -33,16 +132,9 @@ section p {
   right:10px;
   top:53px;
   font-size: 14px;
-  color:#ffffff;
+  color: gray;
 }
 
-.container-header {
-  background-image: url("../img/dragold_wp.jpg");
-  color:#ffffff;
-  padding-top: 100px;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  }
 
 .head-name {
   width: 36%;
