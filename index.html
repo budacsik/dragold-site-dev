@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DraGold Ötvösmester</title>
+  <title>Dragodits András | ékszerész</title>
   <meta charset="UTF-8">
   <meta name="description" content="Egyedi ékszerkészítés">
   <meta name="keywords" content="Ötvös, egyedi, arany, ezüst, ékszer készítés, egyedi igények">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href='https://fonts.googleapis.com/css?family=Poiret+One|Hind:300|Lora:400,400italic' rel='stylesheet' type='text/css'>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery.min.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <script>
   $(document).ready(function(){
   	$('a[href^="#"]').on('click',function (e) {
@@ -31,21 +29,29 @@
   </script>
 </head>
 <body>
-  <!-- navigation bar -->
-  <nav class="container-fluid">
-    <div clas="row">
-      <!--<div class="ajanlat"><a href="#">Ajánlat kérés</a></div>-->
-      <div class="col-md-3 logo">DraGold</div>
-      <div class="col-sm-9 menu text-right">
-        <ul class="list-inline">
-          <li><a href="#szolgaltatasaim">Szolgáltatásaim</a></li>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">DraGold</a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav navbar-right" >
+          <li class="active"><a href="#szolgaltatasaim">Szolgáltatásaim<span class="sr-only">(current)</span></a></li>
           <li><a href="#">Áraim</a></li>
-          <li><a href="#">Kapcsolat</a></li>
-          <li><button type="button" class="btn btn-success" data-toggle="modal" data-target="#ajanlatForm"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></button></li>
+          <li><a href="#" data-toggle="modal" data-target="#ajanlatForm">Kapcsolat</a></li>
         </ul>
       </div>
     </div>
   </nav>
+
+<button type="button" class="btn btn-success navbar-btn navbar-right" data-toggle="modal" data-target="#ajanlatForm"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></button>
   <div class="tel-number">+36 (30) 815-6309</div>
   <!-- header -->
   <header class="container-header">
@@ -61,7 +67,7 @@
       </article>
   </header>
 
-  <section class="container">
+  <section class="container body-text">
     <article class="row jumbotron">
       <div class="col-md-12">
           <h2>Törtarany felvásárlás</h2>
@@ -73,7 +79,7 @@
       </div>
     </article>
   </section>
-  <section class="container center" id="szolgaltatasaim">
+  <section class="container center body-text" id="szolgaltatasaim">
     <article class="row">
       <div class="col-md-4">
         <div class="thumbnail">
@@ -145,7 +151,7 @@
 <footer>
   <div>
     <address class="footer-info">
-      <strong>1177 Budapest, Wesselény u. 25</strong>
+      <strong>1077 Budapest, Wesselény u. 25</strong>
       <p><strong>Nyitva tartás</strong>
         <br> minden hétköznap 10-18 óra között<br><abbr title="Mobile">Tel</abbr> +36 (30) 815-6309<br>Email: <a href="mailto:dragovitsandras@gmail.com">dragovitsandras@gmail.com</a></p>
     </address>
