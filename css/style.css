@@ -14,10 +14,8 @@ h1 {font-size: 27px;}
 @media screen and (min-width: 768px) {h1 {font-size: 27px;}}
 @media screen and (min-width: 992px) {h1 {font-size: 30px;}}
 
+/* info gombokat beszineztem */
 .btn-info {background-color: #ff8217; border-color: #cc5f02}
-.ccc { max-height: 180px;}
-@media screen and (min-width: 992px ) {.ccc {min-height: 170px;}}
-@media screen and (min-width: 1200px) {.ccc {min-height: 150px;}}
 
 .name {text-align:left;padding-left:8%;}
 @media screen and (max-width: 992px) {.name {text-align:center;padding-left:0px;margin-top:0px;}}
