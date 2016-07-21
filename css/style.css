@@ -1,13 +1,14 @@
 html, body {
-  font-family: sans-serif;
+  font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif,sans-serif;
   margin: 0;
+  color: #525254;
 }
 body, p {
   font-size: 12px;
-  letter-spacing: -.000em;
+  letter-spacing: -.010em;
   line-height: 1.38;
 }
-@media screen and (min-width: 480px) {body, p {font-size: 14px;}}
+@media screen and (min-width: 480px) {body, p {font-size: 16px;}}
 
 h1 {font-size: 27px;}
 @media screen and (min-width: 768px) {h1 {font-size: 27px;}}
@@ -15,8 +16,8 @@ h1 {font-size: 27px;}
 
 .btn-info {background-color: #ff8217; border-color: #cc5f02}
 .ccc { max-height: 180px;}
-@media screen and (min-width: 992px ) {.ccc {min-height: 150px;}}
-@media screen and (min-width: 1200px) {.ccc {min-height: 130px;}}
+@media screen and (min-width: 992px ) {.ccc {min-height: 170px;}}
+@media screen and (min-width: 1200px) {.ccc {min-height: 150px;}}
 
 .name {text-align:left;padding-left:8%;}
 @media screen and (max-width: 992px) {.name {text-align:center;padding-left:0px;margin-top:0px;}}
@@ -97,6 +98,7 @@ h2 { font-size: 20px;}
 .tortarany{border-radius: 0px; background-color:rgb(239, 232, 224)}
 .center{text-align: center;}
 .right{float:right;}
+#tortaranyReszletek {}
 
 .container-header {
   background-image: url("../img/dragold_wp.jpg");
