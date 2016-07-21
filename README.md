@@ -3,7 +3,7 @@ DraGold
 
 Otvos ekszeresz honlap. **Jelenleg fejlesztes alatt all.**
 
-Reszponzivnak kell lennie  (Bootstrap), ezen kivul csak egy kapcsolattarto form-ra lesz szukseg. 
+Mobile first  (Bootstrap)
 
 Az aktualis allapot itt tekintheto meg : https://budacsik.github.io/dragold-site-dev/
 
@@ -11,3 +11,4 @@ Az aktualis allapot itt tekintheto meg : https://budacsik.github.io/dragold-site
 > - CSS
 > - JavaScript
 > - BootStrap
+> - jQuery
