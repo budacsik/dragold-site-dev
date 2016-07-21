@@ -13,6 +13,7 @@ h1 {font-size: 27px;}
 @media screen and (min-width: 768px) {h1 {font-size: 27px;}}
 @media screen and (min-width: 992px) {h1 {font-size: 30px;}}
 
+.btn-info {background-color: #ff8217; border-color: #cc5f02}
 .ccc { max-height: 180px;}
 @media screen and (min-width: 992px ) {.ccc {min-height: 150px;}}
 @media screen and (min-width: 1200px) {.ccc {min-height: 130px;}}
@@ -93,7 +94,7 @@ h2 { font-size: 20px;}
   }
 }
 .tortarany h1{margin-top:0px;}
-.tortarany{border-radius: 0px; background-color: rgba(236, 218, 191, 0.66)}
+.tortarany{border-radius: 0px; background-color:rgb(239, 232, 224)}
 .center{text-align: center;}
 .right{float:right;}
 
