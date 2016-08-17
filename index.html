@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DraGold Ötvösmester</title>
+  <title>Dragodits András | ékszerész</title>
   <meta charset="UTF-8">
   <meta name="description" content="Egyedi ékszerkészítés">
   <meta name="keywords" content="Ötvös, egyedi, arany, ezüst, ékszer készítés, egyedi igények">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href='https://fonts.googleapis.com/css?family=Dosis:500|Yanone+Kaffeesatz|Poiret+One|Architects+Daughter|Cinzel|Niccone|Lora:400,400italic|Courgette|Marck+Script|Maven+Pro:700|MeriendaOne' rel='stylesheet' type='text/css'>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Poiret+One|Hind:300' rel='stylesheet' type='text/css'>
   <script src="https://code.jquery.com/jquery.min.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <script>
   $(document).ready(function(){
   	$('a[href^="#"]').on('click',function (e) {
@@ -32,95 +30,193 @@
 </head>
 <body>
 
-  <div id="navi"></div>
-  <!-- navigation bar -->
-  <nav class="container-fluid">
-    <div clas="row">
-      <!--<div class="ajanlat"><a href="#">Ajánlat kérés</a></div>-->
-      <div class="col-md-3">DraGold ékszer</div>
-      <div class="col-sm-9 menu text-right">
-        <ul class="list-inline">
-          <li><a href="#szolgaltatasaim">Szolgáltatásaim</a></li>
-          <li><a href="#">Áraim</a></li>
-          <li><a href="#">Kapcsolat</a></li>
+
+  <!-- header -->
+  <div class="container-fluid title">
+    <div class="row">
+      <div class="col-sm-12  font-family-poriet">
+        <h1>Dragovits András</h1>
+        <hr>
+        <h3 class="titulus">Ékszerész</h3>
+      </div>
+    </div>
+  </div>
+  <!--  navigation  -->
+  <nav class="navbar navbar-inverse font-family-poriet" id="nav-cust">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand logo-font" id="a-menu" href="#">DraGold</a>
+      </div>
+      <div class="collapse navbar-collapse header-menu" id="navbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown inverse">
+            <a class="dropdown-toggle" id="a-menu" data-toggle="dropdown" href="#"> Szolgáltatásaim
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu header-menu-toggle font-family-hind">
+              <li><a href="#egyedi_ekszer_keszites">Egyedi ékszer készítés</a></li>
+              <li><a href="#karikagyuru_keszites">Karikagyűrű készítés</a></li>
+              <li><a href="#ekszer_javitas_helyben">Ékszer javítás helyben</a></li>
+              <li><a href="#ekszer_restauralas">Ékszer restaurálás</a></li>
+              <li><a href="#kopotlas">Kőpótlás</a></li>
+              <li><a href="#tisztitas_polirozas">Tisztítás polírozás</a></li>
+              <li><a href="#eses_gravirozas">Vésés, gravírozás</a></li>
+              <li><a href="#tortarany_felvasarlas">Törtarany felvásárlás</a></li>
+            </ul>
+          </li>
+          <li><a id="a-menu" href="#" data-toggle="modal" data-target="#ajanlatForm"> Kapcsolat</a></li>
+          <li><a id="a-menu" href="#">Munkáim</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  <div class="tel-number">+36 (30) 815-6309</div>
-  <!-- header -->
-  <header>
-    <div class="header-top">
-      <div class="head-top"><i>Egyedi ékszerek készítése</i></div>
-      <div class="head-title"><h1>Dragovits András</h1></div>
-      <div class="head-bottom"><i>Ékszerész</i></div>
+  <!-- welcome content -->
+  <div class="container">
+    <div class="row section-">
+      <div class="col-md-3 font-family-hind text-center ekszer-restauralas">
+        <h1>Ékszerek restaurálása</h1>
+        <p><img src="img/ekszer_restauralas.jpeg" class="img-circle" height="150"></p>
+        <p class="text-justify">Régi kopott ékszerek javítása, kőpótlás, gyűrű sín részének megerősítése, cseréje. Vésés “frissítése”, törött, szakadt részek rendbe hozatala, megerősítése, polírozás, tisztítás rövid határidövel.</p>
+      </div>
+      <div class="col-md-6 udvozlo font-family-hind  welcome-cont text-center">
+        <h1>Üdvözlöm!</h1>
+        <p class="text-justify">1989 óta, immáron több mint <strong>26 éve</strong> foglalkozom egyedi arany, ezüst ékszerek készítésével, javításával, restaurálásával. Elkészítem egyedi karikagyűrűjét akár hozott kép alapján is. Üzletemben található a műhelyem is, így kisebb munkák (kőpótlás, polírozás) akár helyben megvárható, vagy 1-2 munkanapon belül elkészül.</p>
+        <p class="text-justify">Várom szeretettel üzletemben, jól megközelíthető helyen vagyok, illetve telefonon is szívesen válaszolok a felmerülő kérdésére. Ajánlatkérés gomb alatt pedig bármelyik szolgáltatásom felől tud érdeklődni, árajánlatot kérni.</p>
+        <p>Fontos számomra az ügyfél elégedettsége, így egy napon belül számíthat válaszomra. Keressen bátran.</p>
+      </div>
+      <div class="col-md-3 udvozlo font-family-hind text-center egyedi-ekszer">
+        <h1>Egyedi ékszer készítés</h1>
+        <p><img src="img/egyedi_ekszer.jpeg" class="img-circle" height="150"></p>
+        <p class="text-justify">Üzletembe vállalom, hogy elkészítem az ékszerét akár egyedi elképzelés, hozott kép, vagy hozott minta alapján. Az Ön elképzelése alapján fehér, sárga, vörös aranyból, illetve igény esetén ezüstből.</p>
+      </div>
     </div>
-  </header>
-  <!-- container-narrow -->
+  </div>
 
-  <article class="container udvozlo bg-info">
-    <div class="col-md-9"><h1>Üdvözlöm!</h1>
-      <p>1989 óta, immáron több mint <strong>26 éve</strong> foglalkozom egyedi arany, ezüst ékszerek készítésével, javításával., restaurálásával. elkészítem egyedi karikagyűrűjét akár hozott kép alapján is. Üzletemben található a műhelyem is, így kisebb munkák (kőpótlás, polírozás) akár helyben megvárható, vagy 1-2 munkanapon belül elkészül.</p>
-      <p>Várom szeretettel üzletemben, jól megközelíthető helyen vagyok, illetve telefonon is szívesen válaszolok a felmerülő kérdésére. Ajánlatkérés gomb alatt pedig bármelyik szolgáltatásom felől tud érdeklődni, árajánlatot kérni.</p>
-      <p>Fontos számomra az ügyfél elégedettsége, így egy napon belül számíthat válaszomra. Keressen bátran.</p>
-      <cite>Dragovits András</cite>
+  <div class="tel-number"><span class="glyphicon glyphicon-phone-alt"></span> +36 (30) 815-6309</div>
+
+  <!-- page content -->
+  <section class="container font-family-hind" id="szolgaltatasaim">
+    <article class="row center row-0" id="ekszer_restauralas">
+      <div class="col-md-12">
+        <h2>Ékszer restaurálás</h2>
+        <p><img src="img/ekszer_restauralas.jpeg" class="img-circle"></p>
+        <p>Régi kopott ékszerek javítása, kőpótlás, gyűrű sín részének megerősítése, cseréje. Vésés “frissítése”, törött, szakadt részek rendbe hozatala, megerősítése, polírozás, tisztítás rövid határidövel.</p>
+      </div>
+    </article>
+    <article class="row center row-1" id="karikagyuru_keszites">
+      <div class="col-md-12">
+        <h2>Karikagyűrű készítés</h2>
+        <p>Üzletembe karikagyűrű készítéssel is foglalkozok. Akár egyszínű fehér/sárga/vörös (rose) aranyból, a kívánt szélesség és profil szerint, de lehetőség van ezek kombinációjából is elkészíteni az önök által megálmodott karikagyürüt kép, rajz és hozott minta alapján is. A karikagyűrűbe egyedi vésést: dátum, név, rajz, de akár újjlenyomat vésését is vállalom.</p>
     </div>
-    <div class="col-md-3">
-
-    </div>
-  </article>
-
-  <section class="container center" id="szolgaltatasaim">
-    <article class="row">
-      <div class="col-md-4">
+    </article>
+    <article class="row center row-0" id="egyedi_ekszer_keszites">
+      <div class="col-md-12">
         <h2>Egyedi ékszer készítés</h2>
         <p>Üzletembe vállalom, hogy elkészítem az ékszerét akár egyedi elképzelés, hozott kép, vagy hozott minta alapján. Az Ön elképzelése alapján fehér, sárga, vörös aranyból, illetve igény esetén ezüstből.</p>
-      </div>
-      <div class="col-md-4">
+    </div>
+    </article>
+    <article class="row center row-1" id="ekszer_javitas_helyben">
+      <div class="col-md-12">
         <h2>Ékszer javítás helyben</h2>
         <p>Az üzletembe lévő műhelyembe akár azonnali ékszer javítást is tudok vállalni, amennyiben az lehetséges, de ha nem, egy-két nap alatt a sérült ékszer kijavításra kerül, és az üzletembe átvehető.</p>
-      </div>
-      <div class="col-md-4">
-        <h2>Törtarany felvásárlás</h2>
-        <p>Tört arany felvásárlás a legmagasabb napi árfolyamon, azonnali készpénz fizetéssel.</p>
-      </div>
+    </div>
     </article>
-    <article class="row">
-      <div class="col-md-4">
+    <article class="row center row-0" id="tortarany_felvasarlas">
+      <div class="col-md-12">
+        <h2>Törtarany felvásárlás</h2>
+        <p>Tört arany felvásárlás <strong>a legmagasabb napi árfolyamon</strong>, azonnali készpénz fizetéssel.</p>
+    </div>
+    </article>
+    <article class="row center row-1" id="kopotlas">
+      <div class="col-md-12">
         <h2>Kőpótlás</h2>
-        <p>Nemesfém ékszerekben kő pótlás, fél drága, illetve drágakövekkel, brilliánsal, hagyományos kézi foglalással, garanciával.</p>
-      </div>
-      <div class="col-md-4">
+        <p>Vállalom fél drága, illetve drágakövekkel, brilliánsal, hagyományos kézi foglalással, garanciával.</p>
+    </div>
+    </article>
+    <article class="row center row-0" id="tisztitas_polirozas">
+      <div class="col-md-12">
         <h2>Tisztítás, polírozás</h2>
         <p>Elkoszolódott, karcos arany, ezüst, acél ékszerét, óráját, polírozással, ultra hangos tisztítással, aranyozással, ródiumozással akár aznap, vagy egy napos határidővel tudom elvállalni.</p>
-      </div>
-      <div class="col-md-4">
-        <h2>Ékszer restaurálás</h2>
-        <p>Régi kopott ékszerek javítása, kőpótlás, gyűrű sín részének megerősítése, cseréje. Vésés “frissítése”, törött, szakadt részek rendbe hozatala, megerősítése, polírozás, tisztítás rövid határidövelß.</p>
-      </div>
+    </div>
     </article>
-    <article class="row">
-      <div class="col-md-6">
+    <article class="row center row-1" id="veses_gravirozas">
+      <div class="col-md-12">
         <h2>Vésés, gravírozás</h2>
         <p>Akár új, akár régi ékszerek, egyedi elképzelés szerinti kézi illetve gépi vésése. Régi, kikopott vésések rendbe hozatala, frissítése 2-5 munkanap határidővel. Igény szerint az alapfém színétől eltérő színben is.</p>
-      </div>
-      <div class="col-md-6">
-        <h2>Karikagyűrű készítés</h2>
-        <p>Üzletembe karika gyürü készítéssel is foglalkozok. Akár egyszínű fehér/sárga/vörös (rose) aranyból, a kívánt szélesség és profil szerint, de lehetőség van ezek kombinációjából is elkészíteni az önök által megálmodott karikagyürüt,...kép,..rajz,és hozott minta alapján is lehetséges ez.A karika gyürübe egyedi vésést,..dátum ,.név,..rajz,de akár újéenyomat vésését is vállalom.</p>
-      </div>
+    </div>
     </article>
   </section>
 
+  <!-- Modal -->
+  <div class="modal fade" id="ajanlatForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Ajánlatkérés</h4>
+        </div>
+        <div class="modal-body">
+          Ide kell az ajanlatkero form es szoveg..
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Mégse</button>
+          <button type="button" class="btn btn-primary">Elküld</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- modal arlista -->
+<div class="modal fade" id="arlistaForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Árlistám</h2>
+        <p>Tekintse meg tájékoztató jellegű árlistámat. Pontosabb információkért kressen telefonon, vagy emailben.</p>
+      </div>
+      <div class="modal-body">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Szolgáltatás</th><th>Ár</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>dummy text</td><td>1 Ft</td>
+            </tr>
+            <tr>
+              <td>dummy text</td><td>1 ft</td>
+            </tr>
+            <tr>
+              <td>dummy text</td><td>1 ft</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Bezár</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <!-- footer -->
-<footer>
-  <div>
-    <address class="footer-info">
-      <strong>1177 Budapest, Wesselény u. 25</strong>
+<footer class="container-fluid">
+  <div class="row">
+    <address class="col-md-3 footer-info">
+      <strong>1077 Budapest, Wesselény u. 25</strong>
       <p><strong>Nyitva tartás</strong>
         <br> minden hétköznap 10-18 óra között<br><abbr title="Mobile">Tel</abbr> +36 (30) 815-6309<br>Email: <a href="mailto:dragovitsandras@gmail.com">dragovitsandras@gmail.com</a></p>
     </address>
-    <div class="footer-menu">
-      <ul>
+    <div class="col-md-3 footer-menu right">
+      <ul class="list-inline">
         <li>Térkép</li>
         <li>Szolgáltatásaim</li>
         <li>Áraim</li>
@@ -128,7 +224,7 @@
       </ul>
     </div>
   </div>
-  <div class="copyright">2016</div>
+  <div class="ccol-lg-12 copyright">2016</div>
 </footer>
 
 </body>
