@@ -56,17 +56,16 @@ h2 { font-size: 20px; margin-bottom: 20px;}
 
 .mini-box {
   position: fixed;right:0px;
-  width: 44px; height: 45px;
-  padding-top: 10px;
+  width: 44px; height: 55px;
+  padding-top: 15px;
   font-size: 22px;
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
-  opacity: 0.8;
   font-weight: bold;
 }
 
 .email {
-  background-color: #ff7373;
+  background-color: #ff8000;
   color: #ffffff;
   bottom:145px;
 }
@@ -74,7 +73,7 @@ h2 { font-size: 20px; margin-bottom: 20px;}
 .up {
   background-color: #ffffff;
   color: #000000;
-  bottom:190px;
+  bottom:200px;
 }
 
 @media screen and (min-width: 768px) {.tel-number {opacity: 0.9; font-size: 12px; top:185px;right:11%;}}
