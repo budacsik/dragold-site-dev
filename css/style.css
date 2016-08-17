@@ -1,17 +1,21 @@
 html, body {
-  font-family: 'Raleway', sans-serif,Georgia,Cambria,"Times New Roman",Times,serif,sans-serif;
   margin: 0;
   color: #525254;
+  font-family: 'Raleway', sans-serif,Georgia,Cambria,"Times New Roman",Times,serif,sans-serif;
 }
 
 .bg-white {background: linear-gradient(to bottom right, #ffffff 60%, #eff8fa);}
 
 body, p {
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: -.010em;
   line-height: 1.38;
   font-family: 'Raleway', sans-serif
 }
+
+.font-family-poriet { font-family: 'Poiret One', cursive; }
+.font-family-hind {font-family: 'Hind', sans-serif; }
+.font-family-raleway {font-family: 'Raleway', sans-serif; }
 #a-menu {color: #ffffff;}
 
 /*@media screen and (min-width: 480px) {body, p {font-size: 1.3em;}}*/
@@ -24,10 +28,6 @@ h1 {font-size: 22px;}
 h2 { font-size: 20px; margin-bottom: 20px;}
 @media screen and (min-width: 480px) {h2 {font-size: 28px;}}
 @media screen and (min-width: 768px) {h2 {font-size: 30px;}}
-
-.font-family-poriet { font-family: 'Poiret One', cursive; }
-.font-family-hind {font-family: 'Hind', sans-serif; }
-.font-family-raleway {font-family: 'Raleway', sans-serif; }
 
 /* info gombokat beszineztem */
 .btn-info {background-color: #ff8217; border-color: #cc5f02}
@@ -62,19 +62,19 @@ h2 { font-size: 20px; margin-bottom: 20px;}
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
   font-weight: bold;
-}
+} @media screen and (max-width: 992px) {.mini-box{width:24px; height:35px;font-size:14px;padding-top:10px;}}
 
 .email {
   background-color: #ff8000;
   color: #ffffff;
-  bottom:145px;
-}
+  bottom:5px;
+} @media screen and (max-width: 992px) {.email{opacity: 0.3;background-color:#000000;}}
 
 .up {
   background-color: #ffffff;
   color: #000000;
-  bottom:200px;
-}
+  bottom:60px;
+} @media screen and (max-width: 992px) {.up {opacity: 0.3;bottom:40px;}}
 
 @media screen and (min-width: 768px) {.tel-number {opacity: 0.9; font-size: 12px; top:185px;right:11%;}}
 @media screen and (min-width: 992px) {.tel-number {opacity: 0.9; font-size: 12px; top:145px;right:11%;}}
@@ -82,8 +82,8 @@ h2 { font-size: 20px; margin-bottom: 20px;}
   background-image: url("../img/wp2.png");
   background-repeat: no-repeat;
   background-position: center;
-
-  margin: 55px auto 15px;
+  margin-top: 55px;
+  margin-bottom:15px;
   text-align:
   center;padding: 0;
   }
@@ -117,19 +117,20 @@ hr {
 }
 
 .welcome-cont {
-  margin: 20px auto 20px;
+  margin: 0px auto 20px;
   border-left: 1px solid #e6e6e6;
   border-right: 1px solid #e6e6e6;}
   @media screen and (max-width: 992px) {.welcome-cont{display:none;}}
 
 .welcome-cont h1 {
   display: block;
-  font-size: 32px;
+  font-size: 30px;
   padding: 10px;
+  margin:0;
 }
 
 .welcome-cont p {
-  font-size: 18px;
+  font-size: 12px;
   letter-spacing: -.010em;
   line-height: 1.50;
 }
@@ -151,7 +152,7 @@ hr {
   text-align: center;
 }
 
-#ajanlat-form {
+#ajanlat-form { display:none;
   border: 1px solid #cfecf0;
   border-radius: 10px;
   background-color: #eff8fa;
@@ -162,7 +163,7 @@ hr {
 .right{float:right;}
 .left{float:right;}
 
-footer {/* display:none;*/
+footer {display:none;
   padding: 10px 10px 0px 10px;
   background-color: #000;
   color: #fff;
