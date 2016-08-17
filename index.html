@@ -6,7 +6,7 @@
   <meta name="description" content="Egyedi ékszerkészítés">
   <meta name="keywords" content="Ötvös, egyedi, arany, ezüst, ékszer készítés, egyedi igények">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href='https://fonts.googleapis.com/css?family=Poiret+One|Hind:300|Lora:400,400italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Poiret+One|Hind:300' rel='stylesheet' type='text/css'>
   <script src="https://code.jquery.com/jquery.min.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -29,7 +29,20 @@
   </script>
 </head>
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top" id="topnav">
+
+
+  <!-- header -->
+  <div class="container-fluid title">
+    <div class="row">
+      <div class="col-sm-12  font-family-poriet">
+        <h1>Dragovits András</h1>
+        <hr>
+        <h3 class="titulus">Ékszerész</h3>
+      </div>
+    </div>
+  </div>
+  <!--  navigation  -->
+  <nav class="navbar navbar-inverse font-family-poriet" id="nav-cust">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -38,197 +51,104 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">DraGold</a>
+        <a class="navbar-brand logo-font" id="a-menu" href="#">DraGold</a>
       </div>
-      <div class="collapse navbar-collapse" id="navbar">
-        <ul class="nav navbar-nav navbar-right text-uppercase">
+      <div class="collapse navbar-collapse header-menu" id="navbar">
+        <ul class="nav navbar-nav navbar-right">
           <li class="dropdown inverse">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-wrench"></span> Szolgáltatásaim
+            <a class="dropdown-toggle" id="a-menu" data-toggle="dropdown" href="#"> Szolgáltatásaim
             <span class="caret"></span></a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu header-menu-toggle font-family-hind">
               <li><a href="#egyedi_ekszer_keszites">Egyedi ékszer készítés</a></li>
-              <li><a href="#karikagyuru_keszites">Karikagyűrű készítés<</a></li>
+              <li><a href="#karikagyuru_keszites">Karikagyűrű készítés</a></li>
               <li><a href="#ekszer_javitas_helyben">Ékszer javítás helyben</a></li>
               <li><a href="#ekszer_restauralas">Ékszer restaurálás</a></li>
               <li><a href="#kopotlas">Kőpótlás</a></li>
               <li><a href="#tisztitas_polirozas">Tisztítás polírozás</a></li>
               <li><a href="#eses_gravirozas">Vésés, gravírozás</a></li>
+              <li><a href="#tortarany_felvasarlas">Törtarany felvásárlás</a></li>
             </ul>
           </li>
-          <li><a href="#" data-toggle="modal" data-target="#arlistaForm"><span class="glyphicon glyphicon-th-list"></span> Áraim <span class="label label-danger">új akciók</span></a></li>
-          <li><a href="#" data-toggle="modal" data-target="#ajanlatForm"><span class="glyphicon glyphicon-envelope"></span> Kapcsolat</a></li>
+          <li><a id="a-menu" href="#" data-toggle="modal" data-target="#ajanlatForm"> Kapcsolat</a></li>
+          <li><a id="a-menu" href="#">Munkáim</a></li>
         </ul>
       </div>
     </div>
   </nav>
-
-  <!-- header -->
-  <div class="container-fluid welcome-div">
-    <div class="row">
-      <div class="col-sm-12 name">
-        <h1>Dragovits András</h1>
-        <h3>Ékszerész</h3></div>
-    </div>
-    <div class="row">
-      <div class="container">
-        <div class="col-md-8 udvozlo">
-          <h1>Üdvözlöm!</h1>
-          <p class="text-justify">1989 óta, immáron több mint <strong>26 éve</strong> foglalkozom egyedi arany, ezüst ékszerek készítésével, javításával, restaurálásával. Elkészítem egyedi karikagyűrűjét akár hozott kép alapján is. Üzletemben található a műhelyem is, így kisebb munkák (kőpótlás, polírozás) akár helyben megvárható, vagy 1-2 munkanapon belül elkészül.</p>
-          <p class="text-justify">Várom szeretettel üzletemben, jól megközelíthető helyen vagyok, illetve telefonon is szívesen válaszolok a felmerülő kérdésére. Ajánlatkérés gomb alatt pedig bármelyik szolgáltatásom felől tud érdeklődni, árajánlatot kérni.</p>
-          <p>Fontos számomra az ügyfél elégedettsége, így egy napon belül számíthat válaszomra. Keressen bátran.</p>
-        </div>
-        <div class="col-md-4">
-          <div class="list-group">
-            <a class="list-group-item list-group-item-info" href="#egyedi_ekszer_keszites"><strong>SZOLGÁLTATÁSAIM</strong></a>
-            <a class="list-group-item" href="#egyedi_ekszer_keszites">Egyedi ékszer készítés</a>
-            <a class="list-group-item text-info" href="#karikagyuru_keszites">Karikagyűrű készítés</a>
-            <a class="list-group-item" href="#ekszer_javitas_helyben">Ékszer javítás helyben</a>
-            <a class="list-group-item" href="#ekszer_restauralas">Ékszer restaurálás</a>
-            <a class="list-group-item" href="#kopotlas">Kőpótlás</a>
-            <a class="list-group-item" href="#tisztitas_polirozas">Tisztítás polírozás</a>
-            <a class="list-group-item" href="#veses_gravirozas">Vésés, gravírozás</a>
-          </div>
-        </div>
+  <!-- welcome content -->
+  <div class="container">
+    <div class="row section-">
+      <div class="col-md-3 font-family-hind text-center ekszer-restauralas">
+        <h1>Ékszerek restaurálása</h1>
+        <p><img src="img/ekszer_restauralas.jpeg" class="img-circle" height="150"></p>
+        <p class="text-justify">Régi kopott ékszerek javítása, kőpótlás, gyűrű sín részének megerősítése, cseréje. Vésés “frissítése”, törött, szakadt részek rendbe hozatala, megerősítése, polírozás, tisztítás rövid határidövel.</p>
+      </div>
+      <div class="col-md-6 udvozlo font-family-hind  welcome-cont text-center">
+        <h1>Üdvözlöm!</h1>
+        <p class="text-justify">1989 óta, immáron több mint <strong>26 éve</strong> foglalkozom egyedi arany, ezüst ékszerek készítésével, javításával, restaurálásával. Elkészítem egyedi karikagyűrűjét akár hozott kép alapján is. Üzletemben található a műhelyem is, így kisebb munkák (kőpótlás, polírozás) akár helyben megvárható, vagy 1-2 munkanapon belül elkészül.</p>
+        <p class="text-justify">Várom szeretettel üzletemben, jól megközelíthető helyen vagyok, illetve telefonon is szívesen válaszolok a felmerülő kérdésére. Ajánlatkérés gomb alatt pedig bármelyik szolgáltatásom felől tud érdeklődni, árajánlatot kérni.</p>
+        <p>Fontos számomra az ügyfél elégedettsége, így egy napon belül számíthat válaszomra. Keressen bátran.</p>
+      </div>
+      <div class="col-md-3 udvozlo font-family-hind text-center egyedi-ekszer">
+        <h1>Egyedi ékszer készítés</h1>
+        <p><img src="img/egyedi_ekszer.jpeg" class="img-circle" height="150"></p>
+        <p class="text-justify">Üzletembe vállalom, hogy elkészítem az ékszerét akár egyedi elképzelés, hozott kép, vagy hozott minta alapján. Az Ön elképzelése alapján fehér, sárga, vörös aranyból, illetve igény esetén ezüstből.</p>
       </div>
     </div>
   </div>
 
   <div class="tel-number"><span class="glyphicon glyphicon-phone-alt"></span> +36 (30) 815-6309</div>
 
-  <section class="container">
-    <article class="row">
-      <div class="col-md-12 well tortarany">
-        <h1>Törtarany felvásárlás</h1>
-        <p class="text-primary">Tört arany felvásárlás <strong>a legmagasabb napi árfolyamon</strong>, azonnali készpénz fizetéssel.</p>
-        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#tortaranyReszletek">
-          <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> További részletek
-        </button>
-        <div id="tortaranyReszletek" class="collapse">
-          <div class="well">
-            Tovabbi reszletek a tortarany felvasarlassal kapcsolatosan..<br>
-            Itt lesz..
-          </div>
-        </div>
-      </div>
-    </article>
-  </section>
-  <section class="container" id="szolgaltatasaim">
-    <article class="row">
+  <!-- page content -->
+  <section class="container font-family-hind" id="szolgaltatasaim">
+    <article class="row center row-0" id="ekszer_restauralas">
       <div class="col-md-12">
-        <div class="panel panel-default panel-primary" id="karikagyuru_keszites">
-          <div class="panel-heading">
-            <h3 class="panel-title">Karikagyűrű készítés</h3>
-          </div>
-          <div class="panel-body text-primary">Üzletembe karikagyűrű készítéssel is foglalkozok. Akár egyszínű fehér/sárga/vörös (rose) aranyból, a kívánt szélesség és profil szerint, de lehetőség van ezek kombinációjából is elkészíteni az önök által megálmodott karikagyürüt kép, rajz és hozott minta alapján is. A karikagyűrűbe egyedi vésést: dátum, név, rajz, de akár újjlenyomat vésését is vállalom.</div>
-        </div>
+        <h2>Ékszer restaurálás</h2>
+        <p><img src="img/ekszer_restauralas.jpeg" class="img-circle"></p>
+        <p>Régi kopott ékszerek javítása, kőpótlás, gyűrű sín részének megerősítése, cseréje. Vésés “frissítése”, törött, szakadt részek rendbe hozatala, megerősítése, polírozás, tisztítás rövid határidövel.</p>
       </div>
     </article>
-    <article class="row">
+    <article class="row center row-1" id="karikagyuru_keszites">
       <div class="col-md-12">
-        <div class="panel panel-default" id="egyedi_ekszer_keszites">
-          <div class="panel-heading">
-            <h3 class="panel-title">Egyedi ékszer készítés</h3>
-          </div>
-          <div class="panel-body">
-            <div class="col-sm-2">
-              <img src="data:image/jpeg;base64,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" class="img-circle img-responsive" alt="ekszer_restauralas">
-            </div>
-            <div class="col-sm-10">
-              Üzletembe vállalom, hogy elkészítem az ékszerét akár egyedi elképzelés, hozott kép, vagy hozott minta alapján. Az Ön elképzelése alapján fehér, sárga, vörös aranyból, illetve igény esetén ezüstből.
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-    <article class="row">
-      <div class="col-md-12">
-        <div class="panel panel-default" id="ekszer_javitas_helyben">
-          <div class="panel-heading">
-            <h3 class="panel-title">Ékszer javítás helyben</h3>
-          </div>
-          <div class="panel-body">
-            <div class="col-sm-2">
-              <img src="data:image/jpeg;base64,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" class="img-circle img-responsive" alt="ekszer_restauralas">
-            </div>
-            <div class="col-sm-10">
-              Az üzletembe lévő műhelyembe akár azonnali ékszer javítást is tudok vállalni, amennyiben az lehetséges, de ha nem, egy-két nap alatt a sérült ékszer kijavításra kerül, és az üzletembe átvehető.
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-    <article class="row">
-      <div class="col-md-12">
-        <div class="panel panel-default" id="ekszer_restauralas">
-          <div class="panel-heading">
-            <h3 class="panel-title">Ékszer restaurálás</h3>
-          </div>
-          <div class="panel-body">
-            <div class="col-sm-2">
-              <img src="data:image/jpeg;base64,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" class="img-circle img-responsive" alt="ekszer_restauralas">
-            </div>
-            <div class="col-sm-10">
-              Régi kopott ékszerek javítása, kőpótlás, gyűrű sín részének megerősítése, cseréje. Vésés “frissítése”, törött, szakadt részek rendbe hozatala, megerősítése, polírozás, tisztítás rövid határidövel.
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-    <div class="panel text-center">
-      <button type="button" class="btn btn-info" aria-label="Left Align" data-toggle="modal" data-target="#ajanlatForm">
-        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Ha barmilyen kerdese van, keressen batran <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-      </button>
+        <h2>Karikagyűrű készítés</h2>
+        <p>Üzletembe karikagyűrű készítéssel is foglalkozok. Akár egyszínű fehér/sárga/vörös (rose) aranyból, a kívánt szélesség és profil szerint, de lehetőség van ezek kombinációjából is elkészíteni az önök által megálmodott karikagyürüt kép, rajz és hozott minta alapján is. A karikagyűrűbe egyedi vésést: dátum, név, rajz, de akár újjlenyomat vésését is vállalom.</p>
     </div>
-    <article class="row">
-      <div class="col-md-12">
-        <div class="panel panel-default" id="kopotlas">
-          <div class="panel-heading">
-            <h3 class="panel-title">Kőpótlás</h3>
-          </div>
-          <div class="panel-body">
-            <div class="col-sm-2">
-              <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgG8XeQtl8P3ZpSYbVAvsfuXjpfA0i75i-K8W-_Up_zvBMYb3rcw" class="img-circle img-responsive" alt="ekszer_restauralas">
-            </div>
-            <div class="col-sm-10">
-              Vállalom fél drága, illetve drágakövekkel, brilliánsal, hagyományos kézi foglalással, garanciával.
-            </div>
-          </div>
-        </div>
-      </div>
     </article>
-    <article class="row">
+    <article class="row center row-0" id="egyedi_ekszer_keszites">
       <div class="col-md-12">
-        <div class="panel panel-default" id="tisztitas_polirozas">
-          <div class="panel-heading">
-            <h3 class="panel-title">Tisztítás, polírozás</h3>
-          </div>
-          <div class="panel-body">
-            <div class="col-sm-2">
-              <img src="data:image/jpeg;base64,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" class="img-circle img-responsive" alt="ekszer_restauralas">
-            </div>
-            <div class="col-sm-10">
-              Elkoszolódott, karcos arany, ezüst, acél ékszerét, óráját, polírozással, ultra hangos tisztítással, aranyozással, ródiumozással akár aznap, vagy egy napos határidővel tudom elvállalni.
-            </div>
-          </div>
-        </div>
-      </div>
+        <h2>Egyedi ékszer készítés</h2>
+        <p>Üzletembe vállalom, hogy elkészítem az ékszerét akár egyedi elképzelés, hozott kép, vagy hozott minta alapján. Az Ön elképzelése alapján fehér, sárga, vörös aranyból, illetve igény esetén ezüstből.</p>
+    </div>
     </article>
-    <article class="row">
+    <article class="row center row-1" id="ekszer_javitas_helyben">
       <div class="col-md-12">
-        <div class="panel panel-default" id="veses_gravirozas">
-          <div class="panel-heading">
-            <h3 class="panel-title">Vésés, gravírozás</h3>
-          </div>
-          <div class="panel-body">
-            <div class="col-sm-2">
-              <img src="data:image/jpeg;base64,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" class="img-circle img-responsive" alt="ekszer_restauralas">
-            </div>
-            <div class="col-sm-10">
-              Akár új, akár régi ékszerek, egyedi elképzelés szerinti kézi illetve gépi vésése. Régi, kikopott vésések rendbe hozatala, frissítése 2-5 munkanap határidővel. Igény szerint az alapfém színétől eltérő színben is.
-            </div>
-          </div
-        </div>
-      </div>
+        <h2>Ékszer javítás helyben</h2>
+        <p>Az üzletembe lévő műhelyembe akár azonnali ékszer javítást is tudok vállalni, amennyiben az lehetséges, de ha nem, egy-két nap alatt a sérült ékszer kijavításra kerül, és az üzletembe átvehető.</p>
+    </div>
+    </article>
+    <article class="row center row-0" id="tortarany_felvasarlas">
+      <div class="col-md-12">
+        <h2>Törtarany felvásárlás</h2>
+        <p>Tört arany felvásárlás <strong>a legmagasabb napi árfolyamon</strong>, azonnali készpénz fizetéssel.</p>
+    </div>
+    </article>
+    <article class="row center row-1" id="kopotlas">
+      <div class="col-md-12">
+        <h2>Kőpótlás</h2>
+        <p>Vállalom fél drága, illetve drágakövekkel, brilliánsal, hagyományos kézi foglalással, garanciával.</p>
+    </div>
+    </article>
+    <article class="row center row-0" id="tisztitas_polirozas">
+      <div class="col-md-12">
+        <h2>Tisztítás, polírozás</h2>
+        <p>Elkoszolódott, karcos arany, ezüst, acél ékszerét, óráját, polírozással, ultra hangos tisztítással, aranyozással, ródiumozással akár aznap, vagy egy napos határidővel tudom elvállalni.</p>
+    </div>
+    </article>
+    <article class="row center row-1" id="veses_gravirozas">
+      <div class="col-md-12">
+        <h2>Vésés, gravírozás</h2>
+        <p>Akár új, akár régi ékszerek, egyedi elképzelés szerinti kézi illetve gépi vésése. Régi, kikopott vésések rendbe hozatala, frissítése 2-5 munkanap határidővel. Igény szerint az alapfém színétől eltérő színben is.</p>
+    </div>
     </article>
   </section>
 
