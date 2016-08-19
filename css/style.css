@@ -67,7 +67,7 @@ h2 { font-size: 14px; margin-bottom: 4px;text-align:center;}
   font-weight: 600;
   color: #ffffff;
 }
-@media screen and (max-width: 400px) {.header-url {display:none;}}
+@media screen and (max-width: 400px) {.header-url b {display:none;}}
 
 .header-tel-number {
   color:#ffffff;
