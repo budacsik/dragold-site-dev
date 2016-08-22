@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   color: #525254;
-  font-family: 'Raleway', sans-serif,Georgia,Cambria,"Times New Roman",Times,serif,sans-serif;
+  font-family: 'Raleway', sans-serif,Georgia,"Times New Roman",Times,serif,sans-serif;
 }
 
 /* global settings */
@@ -22,13 +22,20 @@ body, p {
 
 #a-menu {color: #ffffff;}
 
-h1 {font-size: 16px;}
+h1 {
+  font-size: 16px;
+  font-family: 'Hind', sans-serif;
+}
 @media screen and (min-width: 480px) {h1 {font-size: 18px;}}
 @media screen and (min-width: 768px) {h1 {font-size: 20px;}}
 @media screen and (min-width: 992px) {h1 {font-size: 22px;}}
 
 /* kiemelt szekcio es szolgaltatasok cimei */
-h2 { font-size: 14px; margin-bottom: 4px;text-align:center;}
+h2 { font-size: 14px;
+  margin-bottom: 4px;
+  text-align:center;
+  font-family: 'Hind', sans-serif;
+}
 @media screen and (min-width: 480px) {h2 {font-size: 16px;margin-bottom: 10px;}}
 @media screen and (min-width: 768px) {h2 {font-size: 18px;}}
 @media screen and (min-width: 992px) {h2 {font-size: 20px;}}
@@ -53,6 +60,7 @@ h2 { font-size: 14px; margin-bottom: 4px;text-align:center;}
   width: 100%;
   background-color: rgba(0, 0, 0, 0.43);
   z-index: 1002;
+  color:#ffffff;
 }
 
 .header-logo-img {
@@ -68,11 +76,6 @@ h2 { font-size: 14px; margin-bottom: 4px;text-align:center;}
   color: #ffffff;
 }
 @media screen and (max-width: 400px) {.header-url b {display:none;}}
-
-.header-tel-number {
-  color:#ffffff;
-  font-size: 13px;
-} @media screen and (min-width: 480px) {.header-tel-number {font-size: 16px;}}
 
 .header-title {
   margin-top: 65px;
@@ -106,6 +109,14 @@ h2 { font-size: 14px; margin-bottom: 4px;text-align:center;}
   text-align:center;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(22, 22, 13, 0.65), rgba(0, 0, 0, 0));
 }
+
+.map-cim {
+  color: #176f28;
+  text-align:center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
 .mini-box {
   position: fixed;right:0px;
   width: 44px; height: 55px;
