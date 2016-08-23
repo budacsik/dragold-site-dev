@@ -1,12 +1,11 @@
 * {margin: 0; padding:0;}
 
-.font-family-poriet { font-family: 'Poiret One', cursive; }
 .font-family-hind {font-family: 'Hind', sans-serif; }
-.font-family-opensans {font-family: 'Open Sans', sans-serif; }
+.font-family-opensans {font-family: 'Lora', serif; }
 
 html, body, p {
   color: #4a4a4a;
-  font-family: 'Hind', sans-serif;
+  font-family: 'Lora', serif;
   letter-spacing: -.010em;
   line-height: 1.38;
   font-size: 16px;
@@ -17,7 +16,7 @@ p {
   color: #6b6a6a;
 }
 
-h1, h2, h3 { font-family: 'Lora', serif; padding: 5px;}
+h1, h2, h3 { font-family: 'Hind', sans-serif; padding: 5px;}
 h1  {font-size: 30px;}
 h2 {
   font-size: 27px;
@@ -29,59 +28,44 @@ a {color: #2685a3;}
 
 /* global settings */
 /* IMG tag settings for 480px */
-@media screen and (max-width: 992px) {img {display:none;}}
+@media screen and (max-width: 640px) {.img-restaurlas, .img-karika, .img-veses, .img-egyedi-ekszer {display:none;}}
+#pic-chronometer {height: 80px;}
 
-/* test code */
-#right-content  {
-  float: right;
-  background: linear-gradient(#ffffff, #f6f9f9);
-  border: 1pxred solid #a8cbd6;
-}
-
-#karikagyuru_keszites-div,
-#veses_gravirozas-div,
-#egyedi_ekszer_keszites-div,
-#ekszer_javitas_helyben-div,
-#tisztitas_polirozas-div {
-  margin: 10px 10px;
-}
-
-#karikagyuru_keszites-div,
-#egyedi_ekszer_keszites-div,
-#tisztitas_polirozas-div {
-  background: linear-gradient(#efefef, #ffffff);
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
+.bg-primary {background-color: #66a2d6;}
 
 /* szolgalgatas lista  */
+#ekszer_restauralas,
 #karikagyuru_keszites,
 #veses_gravirozas,
 #egyedi_ekszer_keszites,
 #ekszer_javitas_helyben,
-#tisztitas_polirozas
-{
-  border-bottom: 2px solid #a6c5d6;
-}
-
+#tisztitas_polirozas,
 #kopotlas,
-#ekszer_restauralas,
-#tortarany_felvasarlas {
-  color: #ffffff;
-  text-align:center;
-  background-color: #476065;
-  border-radius: 5px 5px 5px 5px;
+#tortarany_felvasarlas,
+#rolam
+ {
+  padding:15px 0px 0px 0px;
+  border-bottom: 2px solid #a6c5d6;
+  background-color: #ffffff;
 }
 
-.bg-primary {background-color: #66a2d6;}
+#ekszer_restauralas-div,
+#karikagyuru_keszites-div,
+#tortarany_felvasarlas-div,
+#kopotlas-div,
+#veses_gravirozas-div,
+#egyedi_ekszer_keszites-div,
+#ekszer_javitas_helyben-div,
+#tisztitas_polirozas-div,
+#cim-div {
+  text-align: center;
+}
 
 #tortarany-pic {
   height: 60px;
   margin-top:8px;
   text-align: center;
 }
-
-#hianyzo-kovek {}
 
 .img-restaurlas {width: 120px; height: auto;}
 .img-karika {width: 90px; height: auto;}
@@ -133,7 +117,7 @@ a {color: #2685a3;}
   margin:5px 0px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.55), rgba(0, 0, 0, 0));
 } @media screen and (min-width:640px){.hr-header{margin:10px 0px;}}
-  @media screen and (min-width:991px){.hr-header{margin:20px 0px;}}
+  @media screen and (min-width:992px){.hr-header{margin:20px 0px;}}
 
 .hr-line {
   border: 0px;
