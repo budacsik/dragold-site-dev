@@ -88,17 +88,17 @@ a {color: #2685a3;}
 .szolg-menu {
   text-align: center;
   margin: 0;
-  background-color: rgba(0, 0, 0, 0.33);
+  background-color: #ffffff;
 }
 #szolg-menu {padding:0;margn:0; width:100%;border-bottom: 1px solid grey;}
 #szolg-menu ul {padding-top: 10px;}
 
 #szolg-menu ul li {
-  display:inline;
+  display:inline;font-family: 'Open Sans', sans-serif;
   padding: 3px;
 }
 
-#szolg-menu a {color: #0a859a; opacity: 0.9}
+#szolg-menu a {color: #000000; opacity: 1}
 #szolg-menu a:hover {text-decoration: none;}
 
 .header {
