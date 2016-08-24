@@ -4,7 +4,7 @@
 .font-family-opensans {font-family: 'Lora', serif; }
 
 html, body, p {
-  color: #4a4a4a;
+  color: #948f8f;
   font-family: 'Open Sans', sans-serif, 'Lora', serif;
   letter-spacing: -.010em;
   line-height: 1.58;
@@ -13,26 +13,87 @@ html, body, p {
 
 p {
   padding: 15px 10px 10px 10px;
-  color: #6b6a6a;
-  margin:0;
-}
+  color: #948f8f;
+  margin:20px 0px 0px 0px;
+} @media screen and (max-width: 1400px) {p, #egyedi_ekszer_keszites-p {font-size: 12px}};
 
 h1, h2, h3 { font-family: 'Hind', sans-serif; padding: 5px;}
-h1  {font-size: 30px;}
-h2 {
-  font-size: 27px;
-  background-color: #ffffff;
-}
-h3 { font-size: 24px;}
-
+h1{font-size: 30px;}
+h2{font-size: 27px;}
+h3{font-size: 24px;}
 a {color: #2685a3;}
 
 /* global settings */
 /* IMG tag settings for 480px */
 @media screen and (max-width: 640px) {.img-restaurlas, .img-karika, .img-veses, .img-egyedi-ekszer {display:none;}}
-#pic-chronometer {height: 80px;}
-
+#pic-chronometer {height: 30px;}
+#kek-kiemelt-div {margin-top: 0px; padding:0;}
+#kek-kiemelt-div p {margin-top:0;padding:3px 0px;}
 .bg-primary {background-color: #66a2d6;}
+
+.img-restaurlas {width: 40px; height: auto;}
+.img-karika {width: 50px; height: auto;}
+.img-veses {width: 220px; height: auto;}
+.img-egyedi-ekszer {width: 100px; height: auto;}
+
+.szolgaltatas-box {
+  min-height:350px;
+  padding:0;margin:0 ;
+  text-align: center;
+}
+
+#karikagyuru_keszites-box,
+#tortarany_felvasarlas-box,
+#egyedi_ekszer_keszites-box,
+#tisztitas_polirozas-box {background-color: #fcfaf8;}
+
+#ekszer_restauralas-box,
+#kopotlas-box,
+#veses_gravirozas-box,
+#ekszer_javitas_helyben-box {background-color: #ffffff; margin:0;padding: 0;}
+
+#tortarany_felvasarlas-h2,
+#ekszer_restauralas-h2,
+#karikagyuru_keszites-h2,
+#kopotlas-h2,
+#veses_gravirozas-h2,
+#egyedi_ekszer_keszites-h2,
+#ekszer_javitas_helyben-h2,
+#tisztitas_polirozas-h2 {
+  padding: 14px 0px; margin: 5px 0px 5px 0px;
+  color: #948977;
+  position:relative;
+}
+
+/* Ekszer restauralas box */
+#ekszer_restauralas-p {
+  margin-top:50px;
+  background: url(../img/ekszer_restauralas.png);
+  background-size: 180px auto;
+  background-repeat: no-repeat;;
+  background-position: center;
+}
+
+/* Tortaranz felvasarlas box*/
+#tortarany_felvasarlas-p{
+  margin-top:50px;
+  font-size: 18px;
+  padding: 50px 10px 30px 10px;
+  background: url(../img/gold.png);
+  background-size: 180px auto;
+  background-repeat: no-repeat;;
+  background-position: center;}
+
+/* Egyedi ekszer keszites box */
+#egyedi_ekszer_keszites-p {
+  font-size: 14px;
+} @media screen and (max-width: 1400px) {#egyedi_ekszer_keszites-p {font-size: 12px;}}
+
+/* Ekszer javitas helyben box */
+/* Tisztitas, polirozas box */
+#tisztitas_polirozas-p, #ekszer_javitas_helyben-p {
+  margin-top:50px;
+}
 
 /* szolgalgatas lista  */
 #ekszer_restauralas,
@@ -61,17 +122,13 @@ a {color: #2685a3;}
 #cim-div {
   text-align: center;
 }
+@media screen and (min-width: 800px){#cim-div{display:none;}}
 
 #tortarany-pic {
   height: 60px;
   margin-top:8px;
   text-align: center;
 }
-
-.img-restaurlas {width: 120px; height: auto;}
-.img-karika {width: 90px; height: auto;}
-.img-veses {width: 220px; height: auto;}
-.img-egyedi-ekszer {width: 180px; height: auto;}
 
 .szolg-menu {
   text-align: center;
@@ -92,14 +149,41 @@ a {color: #2685a3;}
 
 .header {
   background-color: #000000;
-} @media screen and (min-width:640px)
-  {.header {background-image: url("../img/wp.jpeg");
-    background-repeat: no-repeat;
-    background-position: right;
-  }}
+} @media screen and (min-width:640px){.header {background-image: url("../img/wp.jpeg");background-repeat: no-repeat;background-position: right;}}
+
+.header-menu {
+  position: fixed; top:0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.50);
+  z-index: 1002;
+  color:#ffffff;
+}
+
+.header-url li a:link {color: #ffffff;text-decoration: none;}
+.header-url li a:hover {color: #a0f3ac;text-decoration: none;}
+.header-url li a:visited {color: #ffffff;text-decoration: none;}
+
+#header-ul-menu {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  font-size:18px;
+  margin:0;
+  letter-spacing: -0.001em;
+  color: #ffffff;
+  font-weight: 500;
+
+}
+#header-ul-menu li {
+  display: inline-block !important;
+  padding: 10px;
+}
+@media screen and (max-width: 400px) {#header-ul-menu li {padding: 8px 0px 8px 0px;}}
+
+
 
 #header-title {
-  margin-top: 45px;
+  margin-top: 55px;
   margin-bottom:15px;
   text-align: center;
   padding: 0;
@@ -136,38 +220,20 @@ a {color: #2685a3;}
 } @media screen and (min-width: 640px){ #header-titulus { font-size: 20px;margin-top: 20px; margin-bottom: 20px;}}
   @media screen and (min-width: 992px) {#header-titulus { font-size: 24px;margin-top: 0px; margin-bottom: 20px;}}
 
-.header-menu {
-  position: fixed; top:0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.50);
-  z-index: 1002;
-  color:#ffffff;
-}
-
-.header ul li {
-  padding-left: 13px;
-}
-.header-url {
-  font-size:18px;
-  margin:0;
-  letter-spacing: -0.001em;
-  color: #ffffff;
-  font-weight: 500;
-}
-@media screen and (max-width: 400px) {.header-url b {display:none;}}
 /* Fejlecben levo cim */
-#header-cim-p     {color: #ffffff;}
+#header-open {color: #ffffff;}
 #header-cim-email,
 #header-cim-pontos {color: #efbbbb;}
-@media screen and (max-width: 1670px) {#header-cim-email {display:none;}}
-@media screen and (max-width: 1150px) {#header-open {display:none;}}
-@media screen and (max-width:  800px) {#header-cim-pontos {display:none;}}
+@media screen and (max-width: 1350px) {#header-cim-email {display:none;}}
+@media screen and (max-width: 1050px) {#header-open {display:none;}}
+@media screen and (max-width:  750px) {#header-cim-pontos {display:none;}}
 
 #logo p { padding:6px 0px;}
 #header-logo-dragold {
   font-size: 24px;
   font-weight: 600;
   margin:0;
+  padding-right: 20px;
   color:#ffffff;
 }@media screen and (max-width: 610px) {#header-logo-dragold {display: none;}}
 
@@ -185,22 +251,7 @@ a {color: #2685a3;}
   margin:0px;
 }
 @media screen and (max-width: 970px) {#header-menu-rolam {display:none;}}
-@media screen and (max-width: 860px) {#header-menu-kapcsolat {display:none;}}
-
-.header-url li a:link {color: #ffffff;text-decoration: none;}
-.header-url li a:hover {color: #a0f3ac;text-decoration: none;}
-.header-url li a:visited {color: #ffffff;text-decoration: none;}
-
-#header-ul-menu {
-  display: inline;
-    margin: 0;
-    padding: 0;
-}
-#header-ul-menu li {
-  display: inline-block !important;
-  padding: 10px;
-}
-@media screen and (max-width: 400px) {#header-ul-menu li {padding: 8px 0px 8px 0px;}}
+@media screen and (max-width: 750px) {#header-menu-kapcsolat {display:none;}}
 
 .rollup-box {
   position: fixed;right:0px;
