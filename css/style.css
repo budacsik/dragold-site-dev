@@ -1,28 +1,30 @@
 * {margin: 0; padding:0;}
-
-.font-family-hind {font-family: 'Hind', sans-serif; }
-.font-family-opensans {font-family: 'Lora', serif; }
-
+/*
+  'Hind', sans-serif          : H1 - H3
+  'Lora', serif               : HTML, BODY
+  'Open Sans', sans-serif     : HTML, BODY
+*/
 html, body, p {
   color: #948f8f;
   font-family: 'Open Sans', sans-serif, 'Lora', serif;
   letter-spacing: -.010em;
   line-height: 1.58;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 p {
   padding: 15px 10px 10px 10px;
   color: #948f8f;
   margin:20px 0px 0px 0px;
-} @media screen and (max-width: 1400px) {p, #egyedi_ekszer_keszites-p {font-size: 12px}};
+} @media screen and (max-width: 992px) {p {font-size: 12px;margin:0;padding: 5px 5px 5px 5px;}};
 
-h1, h2, h3 { font-family: 'Hind', sans-serif; padding: 5px;}
+h1, h2, h3 { padding: 5px;}
 h1{font-size: 30px;}
 h2{font-size: 27px;}
 h3{font-size: 24px;}
 a {color: #2685a3;}
 
+strong {font-size: 1.1em;}
 /* global settings */
 /* IMG tag settings for 480px */
 @media screen and (max-width: 640px) {.img-restaurlas, .img-karika, .img-veses, .img-egyedi-ekszer {display:none;}}
@@ -45,7 +47,10 @@ a {color: #2685a3;}
 #karikagyuru_keszites-box,
 #tortarany_felvasarlas-box,
 #egyedi_ekszer_keszites-box,
-#tisztitas_polirozas-box {background-color: #fcfaf8;}
+#tisztitas_polirozas-box {
+  /*background-color: #f7f5f3;*/
+  background: radial-gradient(#ffffff,#ffffff, #f9f5f1);
+}
 
 #ekszer_restauralas-box,
 #kopotlas-box,
@@ -60,14 +65,25 @@ a {color: #2685a3;}
 #egyedi_ekszer_keszites-h2,
 #ekszer_javitas_helyben-h2,
 #tisztitas_polirozas-h2 {
-  padding: 14px 0px; margin: 5px 0px 5px 0px;
-  color: #948977;
+  text-transform: uppercase;
+  font-family:  'Open Sans', sans-serif;
+  font-size: 320x;
+  line-height: 1.28;
+  padding: 10px 0px; margin: 5px 0px 5px 0px;
+  color: #696359;
   position:relative;
+}
+
+/* Karikagyuru keszites P */
+#karikagyuru_keszites-p {
+  margin: 0;
+  padding-top: 0;
 }
 
 /* Ekszer restauralas box */
 #ekszer_restauralas-p {
-  margin-top:50px;
+  padding-top:25px;
+  padding-bottom:25px;
   background: url(../img/ekszer_restauralas.png);
   background-size: 180px auto;
   background-repeat: no-repeat;;
@@ -76,13 +92,26 @@ a {color: #2685a3;}
 
 /* Tortaranz felvasarlas box*/
 #tortarany_felvasarlas-p{
-  margin-top:50px;
   font-size: 18px;
   padding: 50px 10px 30px 10px;
   background: url(../img/gold.png);
   background-size: 180px auto;
   background-repeat: no-repeat;;
-  background-position: center;}
+  background-position: center;
+}
+
+/* Ekszer restauralas box */
+#kopotlas-p {
+  margin-top:20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: url(../img/diamond.svg);
+  background-size: 140px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #132a33;
+  font-weight: 600;
+}
 
 /* Egyedi ekszer keszites box */
 #egyedi_ekszer_keszites-p {
@@ -92,13 +121,29 @@ a {color: #2685a3;}
 /* Ekszer javitas helyben box */
 /* Tisztitas, polirozas box */
 #tisztitas_polirozas-p, #ekszer_javitas_helyben-p {
-  margin-top:50px;
+  padding:25px 10px;
 }
 
 /* 990 px */
 @media screen and (max-width: 992px) {
   .szolgaltatas-box {min-height:150px;}
+  #karikagyuru_keszites-p {font-size: 16px;}
   #tortarany_felvasarlas-p{margin-top:0px;  padding-top:0px;}
+  #ekszer_restauralas-p,
+  #tortarany_felvasarlas-p,
+  #kopotlas-p,
+  #egyedi_ekszer_keszites-p,
+  #ekszer_javitas_helyben-p,
+  #tisztitas_polirozas-p {padding:15px;background-size: 60px auto;font-size: 16px;}
+}
+@media screen and (min-width: 992px) {
+  #cim-div,#szolg-menu {display: none;}
+}
+/* END 992 px */
+
+#cim-div {
+  text-align: center;
+  font-size: 18px;
 }
 
 #tortarany-pic {
