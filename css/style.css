@@ -157,9 +157,7 @@ strong {font-size: 1.1em;}
 }
 
 /* Egyedi ekszer keszites box */
-#egyedi_ekszer_keszites-p {
-  font-size: 14px;
-} @media screen and (max-width: 1400px) {#egyedi_ekszer_keszites-p {font-size: 12px;}}
+#egyedi_ekszer_keszites-p {font-size: 12px;}
 
 /* Ekszer javitas helyben box */
 /* Tisztitas, polirozas box */
