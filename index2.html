@@ -12,7 +12,7 @@
   <meta property="og:url" content="http://dragold.hu/" />
   <meta property="og:image" content="http://dragold.hu/img/egyedi_ekszer.jpeg" />
   <meta property="og:locale" content="hu_HU" />
-  <link href='https://fonts.googleapis.com/css?family=Hind:300|Lora' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300|Lora|Open+Sans' rel='stylesheet' type='text/css'>
   <script src="https://code.jquery.com/jquery.min.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -38,20 +38,24 @@
   <div id="top"></div>
   <header class="container-fluid header">
     <div class="row header-menu">
-      <div class="col-xs-2">
-        <a href="http://dragold.hu"><img src="img/wedding-rings.svg" alt="dragold-logo" class="header-logo-img img-responsive"></a>
+      <div class="col-md-5 right text-right">
+        <ul class="header-url" id="header-ul-menu">
+          <li><a href="#rolam" id="header-menu-rolam">Rólam</a></li>
+          <li><a href="#kapcsolat" id="header-menu-kapcsolat">Kapcsolat</a></li>
+          <li class="font-family-hind"><a id="header-nav-mobile" href="tel:+36308156309"> <span class="glyphicon glyphicon-phone-alt"></span>  +36-30 815-6309</a></li>
+        </ul>
       </div>
-      <!-- ul inline menu -->
-      <div class="col-xs-10">
-        <div class="right">
-          <ul class="header-url" id="header-ul-menu">
-            <li><a href="http://dragold.hu" id="header-menu-dragoldhu">DraGold.hu</a></li>
-            <li><a href="#rolam" id="header-menu-rolam">Rólam</a></li>
-            <li><a href="#kapcsolat" id="header-menu-kapcsolat">Kapcsolat</a></li>
-            <li class="font-family-hind"><a id="header-nav-mobile" href="tel:+36308156309"> <span class="glyphicon glyphicon-phone-alt"></span>  +36-30 815-6309</a></li>
-          </ul>
+      <div class="col-xs-5 right" id="header-cim-div">
+        <div id="header-cim">
+          <p  class="center" id="header-cim-p">
+            <a href="#kapcsolat" id="header-cim-pontos">1077 Budapest, Wesselényi u. 25.</a><span id="header-open"> | Nyitva H-P: 10-18 óra |</span> <a id="header-cim-email" href="mailto:dragovitsandras@gmail.com">dragovitsandras@gmail.com</a>
+          </p>
         </div>
       </div>
+      <div class="col-md-2 left" id="logo">
+        <p class="text-left"><a href="http://dragold.hu" id="header-logo-dragold">DraGold</a></p>
+      </div>
+
     </div>
     <div class="row">
       <div class="col-xs-12">

@@ -5,15 +5,16 @@
 
 html, body, p {
   color: #4a4a4a;
-  font-family: 'Lora', serif;
+  font-family: 'Open Sans', sans-serif, 'Lora', serif;
   letter-spacing: -.010em;
-  line-height: 1.38;
+  line-height: 1.58;
   font-size: 16px;
 }
 
 p {
   padding: 15px 10px 10px 10px;
   color: #6b6a6a;
+  margin:0;
 }
 
 h1, h2, h3 { font-family: 'Hind', sans-serif; padding: 5px;}
@@ -98,7 +99,7 @@ a {color: #2685a3;}
   }}
 
 #header-title {
-  margin-top: 65px;
+  margin-top: 45px;
   margin-bottom:15px;
   text-align: center;
   padding: 0;
@@ -106,7 +107,7 @@ a {color: #2685a3;}
   letter-spacing: 0.090em;
   text-shadow: 1px 2px 5px #000000;
   color: #ffffff;
-} @media screen and (min-width: 640px) {#header-title  {font-size: 30px;}}
+} @media screen and (min-width: 640px) {#header-title  {font-size: 30px;margin-top: 85px;}}
   @media screen and (min-width: 992px) {#header-title  {font-size: 40px;}}
 
 
@@ -135,11 +136,6 @@ a {color: #2685a3;}
 } @media screen and (min-width: 640px){ #header-titulus { font-size: 20px;margin-top: 20px; margin-bottom: 20px;}}
   @media screen and (min-width: 992px) {#header-titulus { font-size: 24px;margin-top: 0px; margin-bottom: 20px;}}
 
-.header-logo-img {
-  height: 37px; width: auto;
-  margin-top:8px;
-}
-
 .header-menu {
   position: fixed; top:0;
   width: 100%;
@@ -159,24 +155,37 @@ a {color: #2685a3;}
   font-weight: 500;
 }
 @media screen and (max-width: 400px) {.header-url b {display:none;}}
+/* Fejlecben levo cim */
+#header-cim-p     {color: #ffffff;}
+#header-cim-email,
+#header-cim-pontos {color: #efbbbb;}
+@media screen and (max-width: 1670px) {#header-cim-email {display:none;}}
+@media screen and (max-width: 1150px) {#header-open {display:none;}}
+@media screen and (max-width:  800px) {#header-cim-pontos {display:none;}}
 
-#header-menu-kapcsolat,
-#header-menu-dragoldhu,
-#header-menu-rolam
- {
-  padding:0px;
-  margin:0px;
-}
-@media screen and (max-width: 600px) {#header-menu-dragoldhu {display:none;}}
-@media screen and (max-width: 550px) {#header-menu-rolam {display:none;}}
-@media screen and (max-width: 430px) {#header-menu-kapcsolat {display:none;}}
-@media screen and (max-width: 400px) {#header-menu-kapcsolat,#header-nav-mobile {font-size:14px;}}
+#logo p { padding:6px 0px;}
+#header-logo-dragold {
+  font-size: 24px;
+  font-weight: 600;
+  margin:0;
+  color:#ffffff;
+}@media screen and (max-width: 610px) {#header-logo-dragold {display: none;}}
 
+
+/* Fejlec menu */
 #header-nav-mobile {
   padding:0px;
   margin:0px;
   color: #efbbbb;
 }
+#header-menu-kapcsolat,
+#header-menu-rolam
+ {
+  padding:0px;
+  margin:0px;
+}
+@media screen and (max-width: 970px) {#header-menu-rolam {display:none;}}
+@media screen and (max-width: 860px) {#header-menu-kapcsolat {display:none;}}
 
 .header-url li a:link {color: #ffffff;text-decoration: none;}
 .header-url li a:hover {color: #a0f3ac;text-decoration: none;}
@@ -189,18 +198,9 @@ a {color: #2685a3;}
 }
 #header-ul-menu li {
   display: inline-block !important;
-  padding: 12px 10px 12px 10px;
+  padding: 10px;
 }
 @media screen and (max-width: 400px) {#header-ul-menu li {padding: 8px 0px 8px 0px;}}
-
-#header-cim {
-  color: #c6d6d5;
-  opacity: 0.9;
-  text-align:center;
-  padding: 0;
-  background-color: rgba(0, 0, 0, 0.30);
-  width:100%;
-}
 
 .rollup-box {
   position: fixed;right:0px;
