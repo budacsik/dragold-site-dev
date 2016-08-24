@@ -95,34 +95,11 @@ a {color: #2685a3;}
   margin-top:50px;
 }
 
-/* szolgalgatas lista  */
-#ekszer_restauralas,
-#karikagyuru_keszites,
-#veses_gravirozas,
-#egyedi_ekszer_keszites,
-#ekszer_javitas_helyben,
-#tisztitas_polirozas,
-#kopotlas,
-#tortarany_felvasarlas,
-#rolam
- {
-  padding:15px 0px 0px 0px;
-  border-bottom: 2px solid #a6c5d6;
-  background-color: #ffffff;
+/* 990 px */
+@media screen and (max-width: 992px) {
+  .szolgaltatas-box {min-height:150px;}
+  #tortarany_felvasarlas-p{margin-top:0px;  padding-top:0px;}
 }
-
-#ekszer_restauralas-div,
-#karikagyuru_keszites-div,
-#tortarany_felvasarlas-div,
-#kopotlas-div,
-#veses_gravirozas-div,
-#egyedi_ekszer_keszites-div,
-#ekszer_javitas_helyben-div,
-#tisztitas_polirozas-div,
-#cim-div {
-  text-align: center;
-}
-@media screen and (min-width: 800px){#cim-div{display:none;}}
 
 #tortarany-pic {
   height: 60px;
