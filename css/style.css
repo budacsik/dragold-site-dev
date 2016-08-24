@@ -161,11 +161,15 @@ a {color: #2685a3;}
 @media screen and (max-width: 400px) {.header-url b {display:none;}}
 
 #header-menu-kapcsolat,
-#header-nav-dragoldhu {
+#header-menu-dragoldhu,
+#header-menu-rolam
+ {
   padding:0px;
   margin:0px;
 }
-@media screen and (max-width: 500px) {#header-nav-dragoldhu {display:none;}}
+@media screen and (max-width: 600px) {#header-menu-dragoldhu {display:none;}}
+@media screen and (max-width: 550px) {#header-menu-rolam {display:none;}}
+@media screen and (max-width: 430px) {#header-menu-kapcsolat {display:none;}}
 @media screen and (max-width: 400px) {#header-menu-kapcsolat,#header-nav-mobile {font-size:14px;}}
 
 #header-nav-mobile {
