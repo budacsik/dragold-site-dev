@@ -149,11 +149,10 @@ strong {font-size: 1.1em;}
   margin-top:20px;
   padding-top: 40px;
   padding-bottom: 40px;
-  background: url(../img/diamond.svg);
+  /*background: url(../img/diamond.svg);*/
   background-size: 140px auto;
   background-repeat: no-repeat;
   background-position: center;
-  color: #132a33;
   font-weight: 600;
 }
 
