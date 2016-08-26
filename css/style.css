@@ -24,7 +24,6 @@ h2{font-size: 27px;}
 h3{font-size: 24px;}
 a {color: #2685a3;}
 
-strong {font-size: 1.1em;}
 /* global settings */
 /* IMG tag settings for 480px */
 @media screen and (max-width: 640px) {.img-restaurlas, .img-karika, .img-veses, .img-egyedi-ekszer {display:none;}}
@@ -57,13 +56,23 @@ strong {font-size: 1.1em;}
 #header-kapcsolat a,
 #header-dragold-a {color: #ffffff;}
 #header-mobile-a,
+#header-emai-a,
 #header-pontos-cim-a {color: #efbbbb;}
-#header-pontos-cim {margin-left: 20px;}
+#header-pontos-cim {
+  padding: 15px 15px;
+  border-right: 7px solid #8e3737;
+}
+
+h1#header-title,
+h2#header-titulus {margin-left:15px;}
+#name-job-box {padding: 13px 0;}
+@media screen and (max-width: 792px) {#name-job-box {display: none;}}
+#name-job-box-tab {display:none;} @media screen and (max-width: 792px) {#name-job-box-tab {display: inline;}}
 
 #header-andras {
-  background-color: rgba(255, 255, 255, 0.17);
+  background-color: rgba(58, 25, 25, 0.52);
   font-family: 'Open Sans', sans-serif;
-  padding-left: 70px;
+  padding:0;
   margin-top:53px;
   color: #ffffff;
   text-shadow: 2px 2px 2px #000000;
@@ -71,9 +80,10 @@ strong {font-size: 1.1em;}
   letter-spacing: 0.200em;
 }
 /* menu responsive nice */
-@media screen and (max-width: 992px) {#header-pontos-cim {display: none;}}
+@media screen and (max-width: 792px) {#header-pontos-cim {display: none;}}
 @media screen and (max-width: 500px) {#header-kapcsolat {display: none;}}
 @media screen and (max-width: 400px) {#header-dragold {display: none;}}
+
 /* End header */
 
 #pic-chronometer {height: 30px;}
@@ -81,6 +91,11 @@ strong {font-size: 1.1em;}
 #kek-kiemelt-div p {margin-top:0;padding:3px 0px;}
 .bg-primary {background-color: #66a2d6;}
 
+#cim-div {
+  text-align: center;
+  background-color: #855990;
+  color: #ececec;
+}
 
 .szolgaltatas-box {
   min-height:350px;
@@ -177,15 +192,9 @@ strong {font-size: 1.1em;}
   #ekszer_javitas_helyben-p,
   #tisztitas_polirozas-p {padding:15px;background-size: 60px auto;font-size: 16px;}
 }
-@media screen and (min-width: 992px) {
-  #cim-div,#szolg-menu {display: none;}
-}
+@media screen and (min-width: 992px) { #szolg-menu {display: none;}}
+@media screen and (min-width: 792px) { #cim-div {display: none;}}
 /* END 992 px */
-
-#cim-div {
-  text-align: center;
-  font-size: 18px;
-}
 
 .szolg-menu {
   text-align: center;
@@ -204,35 +213,31 @@ strong {font-size: 1.1em;}
 #szolg-menu a:hover {text-decoration: none;}
 
 .rollup-box {
+  background-color: rgba(124, 161, 216, 0.23);;
+  color: #000000;
+  bottom:10px;
   position: fixed;right:0px;
   width: 44px; height: 55px;
-  padding-top: 15px;
+  padding-top: 11px;
   font-size: 22px;
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
-  font-weight: bold;
-  z-index: 1000;
-} @media screen and (max-width: 992px) {.mini-box{width:24px; height:35px;font-size:14px;padding-top:10px;}}
-
-.up {
-  background-color: rgba(0, 0, 0, 0.04);
-  color: #000000;
-  bottom:10px;
-} @media screen and (max-width: 992px) {.up {opacity: 0.3;bottom:40px;}}
+  z-index: 1002;
+} @media screen and (max-width: 992px) {.rollup-box{width:34px; height:35px;font-size:14px;padding-top:8px;}}
 
 .center{text-align: center;}
 .right{float:right;}
 .left{float:left;}
 
-#kapcsolat {
-margin: 10px 0px;
-}
+#kapcsolat {margin: 10px 0px;}
 
 #kapcsolat-cim {
   padding: 20px 20px;
   margin:0;
   text-align:center;
 }
+#kapcsolat-box-mobile {font-size: 28px;}
+#kapcsolat-box-email {font-size: 22px;}
 
 /*
     FOOTER
@@ -243,8 +248,36 @@ footer {
   font-size: 13px;
 }
 
-.footer-cim {font-size:17px;color: #688fb3;margin:0;padding:0px 10px;}
-.footer-open {font-size:15px;margin:0;}
-.footer-menu ul li a{margin: 0; padding: 0;}
-.footer-tagcloud {font-family: 'Hind', sans-serif;font-size:9px;color:#9d9d9d;text-align: justify;}
+.footer-address {
+  width: 41.66666667%;
+  padding: 10px;
+  float: left;
+}
+.footer-cim {font-size:17px;color: #688fb3;margin:0;padding:0;}
+.footer-open {font-size:15px;margin:0; padding-left:0px;}
+.footer-tagcloud {
+  width: 41.66666667%;
+  padding: 10px;
+  float: left;
+  font-family: 'Hind', sans-serif;
+  font-size:9px;
+  color:#9d9d9d;
+  text-align: justify;
+}
+.footer-menu {
+  width: 16.66666667%
+  padding: 10px;
+  float: left;
+}
+.footer-menu ul li a {
+  margin: 0; padding: 0;
+  text-align:right;
+}
 .freepik {font-size:10px; text-align:right;}
+
+@media screen and (max-width: 1024px) {.footer-tagcloud {display:none;}}
+
+@media screen and (max-width: 1024px) {.footer-menu {width: 58,33333334%; float:right;}}
+@media screen and (max-width:  670px) {.footer-menu {width: 100%; text-align: center;}}
+@media screen and (max-width:  670px) {.footer-menu ul li a {text-align:center;}}
+@media screen and (max-width:  670px) {.footer-address {display: none;}}
