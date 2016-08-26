@@ -59,8 +59,9 @@ a {color: #2685a3;}
 #header-emai-a,
 #header-pontos-cim-a {color: #efbbbb;}
 #header-pontos-cim {
-  padding: 15px 15px;
-  border-right: 7px solid #8e3737;
+  padding: 5px 5px;
+  border-right: 4px solid #8e3737;
+  margin: 10px;
 }
 
 h1#header-title,
