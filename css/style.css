@@ -1,9 +1,5 @@
 * {margin: 0; padding:0;}
-/*
-  'Hind', sans-serif          : H1 - H3
-  'Lora', serif               : HTML, BODY
-  'Open Sans', sans-serif     : HTML, BODY
-*/
+
 html, body, p {
   color: #777373;
   font-family: 'Open Sans', sans-serif, 'Lora', serif;
@@ -19,10 +15,10 @@ p {
 } @media screen and (max-width: 992px) {p {font-size: 12px;margin:0;padding: 5px 5px 5px 5px;}};
 
 h1, h2, h3 { padding: 5px;}
-h1{font-size: 30px;}
-h2{font-size: 27px;}
-h3{font-size: 24px;}
-a {color: #2685a3;}
+h1 {font-size: 30px;}
+h2 {font-size: 27px;}
+h3 {font-size: 24px;}
+a  {color: #2685a3;}
 
 /* global settings */
 /* IMG tag settings for 480px */
@@ -111,7 +107,6 @@ h2#header-titulus {margin-left:15px;}
   /*background-color: #f7f5f3;*/
   background: radial-gradient(#ffffff,#ffffff, #f9f5f1);
 }
-
 #ekszer_restauralas-box,
 #kopotlas-box,
 #veses_gravirozas-box,
@@ -127,9 +122,10 @@ h2#header-titulus {margin-left:15px;}
 #tisztitas_polirozas-h2 {
   text-transform: uppercase;
   font-family:  'Open Sans', sans-serif;
-  font-size: 320x;
-  line-height: 1.28;
-  padding: 10px 0px; margin: 5px 0px 5px 0px;
+  font-size: 28px;
+  line-height: 1.68;
+  letter-spacing: 0.080em;
+  padding: 20px 0px 0px 0px; margin: 5px 0px 5px 0px;
   color: #696359;
   position:relative;
 }
@@ -150,14 +146,17 @@ h2#header-titulus {margin-left:15px;}
   background-position: center;
 }
 
-/* Tortaranz felvasarlas box*/
-#tortarany_felvasarlas-p{
-  font-size: 18px;
-  padding: 50px 10px 30px 10px;
+/* Tortarany felvasarlas box */
+#tortarany_felvasarlas-wp {
   background: url(../img/gold.png);
   background-size: 180px auto;
   background-repeat: no-repeat;;
   background-position: center;
+}
+
+#tortarany_felvasarlas-p {
+  font-size: 18px;
+  margin: 30px 5px 0px 5px;
 }
 
 /* Ekszer restauralas box */
@@ -173,7 +172,7 @@ h2#header-titulus {margin-left:15px;}
 }
 
 /* Egyedi ekszer keszites box */
-#egyedi_ekszer_keszites-p {font-size: 12px;}
+#egyedi_ekszer_keszites-p {}
 
 /* Ekszer javitas helyben box */
 /* Tisztitas, polirozas box */
@@ -185,7 +184,7 @@ h2#header-titulus {margin-left:15px;}
 @media screen and (max-width: 992px) {
   .szolgaltatas-box {min-height:150px;}
   #karikagyuru_keszites-p {font-size: 16px;}
-  #tortarany_felvasarlas-p{margin-top:0px;  padding-top:0px;}
+  #tortarany_felvasarlas-p{margin-top:0px;}
   #ekszer_restauralas-p,
   #tortarany_felvasarlas-p,
   #kopotlas-p,
